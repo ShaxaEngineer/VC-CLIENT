@@ -1,0 +1,109 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/gilroy/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/gilroy/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/gilroy/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/gilroy/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/gilroy/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+}
+
+html.dark body {
+  background-color: var(--color-white);
+}
+
+@theme {
+  /* font */
+  --font-gilroy: 'Gilroy', sans-serif;
+  /* color */
+  --color-extra-blue: #0c1c51;
+  --color-dark-blue: #030d2e;
+  --color-blue: #1f63fd;
+  --color-gray: #f1f2f6;
+  --color-dark-gray: #717276;
+  --color-white: #ffffff;
+  --color-border: #e4e4e4;
+}
+
+/* bg-grayscale */
+.bg-grayscale {
+  filter: grayscale(100%);
+}
+/* container */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* sweper */
+.teamSwiper .swiper-button-prev,
+.teamSwiper .swiper-button-next {
+  @apply size-12 overflow-hidden rounded-xl border border-white/30 bg-white/10 backdrop-blur-xl max-md:hidden;
+}
+.teamSwiper .swiper-button-prev:after,
+.teamSwiper .swiper-button-next:after {
+  @apply text-base text-white;
+}
+
+/* modal */
+.ant-modal .ant-modal-content {
+  @apply rounded-[1.25rem] p-0;
+}
+
+/* pagination */
+.ant-pagination .ant-pagination-item-active {
+  @apply bg-blue rounded-full text-white;
+}
+.ant-pagination .ant-pagination-item-active a {
+  @apply text-white;
+}
+.ant-pagination .ant-pagination-item-active:hover a {
+  @apply text-white;
+}
+.ant-pagination .ant-pagination-item,
+.ant-pagination .ant-pagination-prev,
+.ant-pagination .ant-pagination-next {
+  @apply border-border overflow-hidden rounded-full border;
+}
+.ant-pagination .ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination .ant-pagination-next .ant-pagination-item-link {
+  @apply flex items-center justify-center;
+}

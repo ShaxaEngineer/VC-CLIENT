@@ -6,7 +6,7 @@ import { initReactI18next } from 'react-i18next';
 import { i18nextLng } from './constants';
 import { getLocalStorage } from './utils';
 
-export const lng = getLocalStorage(i18nextLng) || 'uz';
+export const lng = getLocalStorage(i18nextLng) || 'en';
 
 i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
   fallbackLng: lng,

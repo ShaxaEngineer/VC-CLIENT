@@ -61,7 +61,9 @@ export const AboutCompany = () => {
                 </p>
               </div>
               <p className="text-sm text-gray-400 max-md:text-sm">
-                {t('Libero ante facilisis bibendum aliquet fames velit egestas eleifend sit')}
+                {t(
+                  'Trusted by hotels, construction firms, logistics operators & event organisers across the UK.',
+                )}
               </p>
             </div>
             <div className="h-[14rem] w-full overflow-hidden rounded-xl max-md:h-[10rem]">
@@ -80,7 +82,9 @@ export const AboutCompany = () => {
                 <p className="text-dark-blue text-sm !font-bold uppercase">{t('Open vacansy')}</p>
               </div>
               <p className="text-sm text-gray-400 max-md:text-sm">
-                {t('Libero ante facilisis bibendum aliquet fames velit egestas eleifend sit')}
+                {t(
+                  'Available roles updated weekly — from general labour to hospitality and skilled trades.',
+                )}
               </p>
             </div>
           </AnimationGsap>
@@ -93,7 +97,7 @@ export const AboutCompany = () => {
                 </p>
               </div>
               <p className="text-sm text-gray-400 max-md:text-sm">
-                {t('Libero ante facilisis bibendum aliquet fames velit egestas eleifend sit')}
+                {t('Candidates from London and beyond — actively applying')}
               </p>
             </div>
           </AnimationGsap>

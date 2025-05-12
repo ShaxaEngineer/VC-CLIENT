@@ -5,14 +5,14 @@ import { Footer, Header } from '@/components';
 
 import { LenisProvider } from './lenis-context';
 import { routsData } from './routsData';
-import { ScrollToTop } from './scroll-to-top';
+// import { ScrollToTop } from './scroll-to-top';
 
 export const Routs = () => {
   return (
     <>
       <Header />
       <LenisProvider>
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <Routes />
       </LenisProvider>
       <Routes>

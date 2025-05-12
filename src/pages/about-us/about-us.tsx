@@ -67,7 +67,7 @@ export const AboutUs = () => {
                   <p className="text-sm !font-bold text-white uppercase">{t('Open vacancy')}</p>
                 </div>
                 <p className="text-sm text-white max-md:text-sm">
-                  {t('Free from programming experience')}
+                  {t('Fresh roles available weekly across multiple industries')}
                 </p>
               </div>
             </AnimationGsap>
@@ -80,7 +80,7 @@ export const AboutUs = () => {
                   </p>
                 </div>
                 <p className="text-sm text-white max-md:text-sm">
-                  {t('Free from programming experience')}
+                  {t('Candidates from London and beyond — actively applying')}
                 </p>
               </div>
             </AnimationGsap>
@@ -91,7 +91,7 @@ export const AboutUs = () => {
                   <p className="text-sm !font-bold text-white uppercase">{t('Open vacancy')}</p>
                 </div>
                 <p className="text-sm text-white max-md:text-sm">
-                  {t('Free from programming experience')}
+                  {t('Jobs in construction, hotels, events, logistics, and more')}
                 </p>
               </div>
             </AnimationGsap>

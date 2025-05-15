@@ -10,6 +10,8 @@ import {
 } from '@/components';
 
 export const Home = () => {
+  console.log('PWR');
+
   return (
     <>
       <div className={clsx('container mx-auto')}>

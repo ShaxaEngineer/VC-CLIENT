@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { GROWTH, PEOPLEI, SMART } from '@/assets';
 import { AnimationGsap, AnimationGsapText, Breadcrumbs, Team } from '@/components';
 
+import Abouts from '../../assets/img/aboutus.png';
+
 export const AboutUs = () => {
   const { t } = useTranslation();
 
@@ -15,11 +17,11 @@ export const AboutUs = () => {
       <div className="my-5 max-md:my-4">
         <div className={clsx('bg-blue container mx-auto rounded-[1.25rem] p-5')}>
           <div className="h-[28.75rem] w-full overflow-hidden rounded-2xl">
-            <video
-              controls
-              src="https://cdn.pixabay.com/video/2025/04/27/275052_large.mp4"
+            <img
+              src={Abouts}
+              alt="Descriptive text"
               className="h-full w-full object-cover object-center"
-            ></video>
+            />
           </div>
           <h3 className="mt-6 text-2xl !font-extrabold text-white uppercase max-md:mt-4 max-md:text-xl">
             {t('ABOUT OUR COMPANY')}

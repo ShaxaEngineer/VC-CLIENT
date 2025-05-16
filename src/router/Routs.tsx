@@ -5,6 +5,7 @@ import { Footer, Header } from '@/components';
 
 import { LenisProvider } from './lenis-context';
 import { routsData } from './routsData';
+
 // import { ScrollToTop } from './scroll-to-top';
 
 export const Routs = () => {
